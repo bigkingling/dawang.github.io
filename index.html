@@ -5,16 +5,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>图形</title>
-    <link rel="stylesheet" href="../1.css">
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .q {
+    width: 100px;
+    height: 100px;
+    background-color: #9f2323;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .a {
+    width: 100px;
+    height: 100px;
+    background-color: #9f2323;
+    margin: auto;
+  }
+
+  .c {
+    width: 0;
+    height: 0;
+    border-width: 100px;
+    border-style: solid;
+    border-top-color: #ff0000;
+    border-left-color: #cccccc;
+    border-bottom-color: #0000ff;
+    border-right-color: #ffff00;
+  }
+
+  .b {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: repeating-radial-gradient(circle closest-side at center, white, white 10px, black 10px, blue 20px);
+    margin: 0 auto;
+  }
+
+  .a,
+  .q {
+    animation: a 3s ease-in-out infinite;
+  }
+
+
+
+
+
+
+  @keyframes a {
+    0% {
+      width: 100px;
+      height: 100px;
+    }
+
+    25% {
+      border-radius: 50% ;
+      background-color: #af0909;
+    }
+
+    50% {
+      width: 100px;
+      height: 100px;
+      background-color: #250101;
+
+    }
+
+    75% {
+      border-radius: 50% ;
+      background-color: #24af5a;
+    }
+
+    100% {
+      width: 100px;
+      height: 100px;
+      background-color: #9f2323;
+
+    }
+  }
+</style>
+
 <body>
   <div class="q"></div>
   <div class="a"></div>
+  <div class="c"></div>
+  <div class="b"></div>
 </body>
 <script>
   document.writeln(<p>1</p>);
 </script>
 
 </html>
-
-
